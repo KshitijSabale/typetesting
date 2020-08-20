@@ -149,10 +149,59 @@ function data() {
     ];
 
     let num = a.length;
-    let randomIndex = Math.floor(Math.random()*num);
+    let randomIndex = Math.floor(Math.random() * num);
     return a[randomIndex].string;
 }
 
 
 //call the problem as data()
 
+
+
+//to change the question
+function newProblem() {
+    var newQuestion = data();
+    $("#tweet").html(newQuestion);
+}
+
+
+
+var score = 0;
+
+
+function startTimer() {
+    console.log("Timer Started.");
+}
+
+//modular gameplay
+function main() {
+
+    //put up new problem
+    var que = newProblem();
+
+    //clear textarea
+    $("#answer").html("");
+
+    //start the timer.
+    startTimer();
+
+    
+
+    
+    
+    //keep track of the input for each character entered.
+
+
+    //if he fcuks up a char..gameover
+
+
+    //else get the score, display and recurse the function
+
+
+
+}
+
+
+
+
+main();
