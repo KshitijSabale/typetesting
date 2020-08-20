@@ -147,12 +147,8 @@ function data() {
             "string": "I sent my husband to the grocery store for fresh parsley, he came home with a snowblower and a jar of dehydrated onions. Marriage is delightful."
         }
     ];
-
-    let num = a.length;
-    let randomIndex = Math.floor(Math.random()*num);
-    return a[randomIndex].string;
+    return a;
 }
 
 
-//call the problem as data()
-
+export {data};
